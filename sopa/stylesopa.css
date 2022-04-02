@@ -1,0 +1,32 @@
+th.letras{
+    background-color: aqua;
+}
+h1{
+    margin-left: 600px;
+}
+h3{
+    margin-left: 800px;
+}
+ul{
+    margin-left: 800px;
+    
+}
+table{
+    margin-top: -150px;
+}
+th{
+    width: 30px;
+     height:30px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(imghtml.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}

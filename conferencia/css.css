@@ -1,0 +1,237 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(29, 153, 255);
+    margin: 0;
+}
+
+
+
+
+
+.snack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1.75fr 5fr 0.25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "imagenInicio imagenInicio imagenInicio imagenInicio"
+        "iniciosesion iniciosesion iniciosesion iniciosesion";
+    width: 600px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 2.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header"
+        "imagenInicio imagenInicio"
+        "horarios horarios";
+    width: 600px;
+}
+
+
+
+.horarios {
+    grid-area: horarios;
+}
+
+.horarios-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.horarios-content p {
+    font-size: 1.75em;
+}
+
+.header {
+    grid-area: header;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.Logo {
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+}
+
+.Logo img {
+    width: 95%;
+    height: 100px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+}
+
+.iniciosesion {
+    grid-area: iniciosesion;
+}
+
+.is-content {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+
+.imagenInicio {
+    grid-area: imagenInicio;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    justify-content: center;
+}
+
+.portada img {
+    width: 95%;
+    height: 95%;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+}
+
+#img-horarios {
+    width: 60%;
+    text-align: left;
+}
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:active {
+    color: #000000;
+}
+
+a:link {
+    color: #000000;
+}
+
+#singup-form button{
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+
+#singup-form button:hover{
+    font-size: 1.1em;
+}
+
+.modal-body{
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #1ea4fd;
+    color: white;
+    border-color: #1ea4fd;
+    border-radius: 10px;
+    width: 40%;
+    font-size: 0.8em;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.iniciosesion button:hover {
+    font-size: 1em;
+}
+
+.conf-name {
+    color: #fda500;
+}
+
+@media (min-width: 600px) { /*Pantalla mediana*/
+    .snack {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 2.25fr 1.25fr 5fr 0.25fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header"
+            "imagenInicio imagenInicio imagenInicio imagenInicio"
+            "iniciosesion iniciosesion iniciosesion iniciosesion";
+        width: 100%;
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr 0.9fr;
+        grid-template-rows: 0.5fr 3.8fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header"
+            "horarios imagenInicio";
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 1080px) {/*Pantalla grande*/
+    .snack {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 2.125fr 2.5fr 4fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header header header header"
+            "iniciosesion iniciosesion imagenInicio imagenInicio"
+            "iniciosesion iniciosesion imagenInicio imagenInicio"
+            "conferencistas conferencistas conferencistas conferencistas"
+            "footer footer footer footer";
+        width: 100%;
+
+    }
+
+    .conferencistas-info {
+        flex-direction: row;
+    }
+
+    #img-horarios {
+        width: 61%;
+        text-align: left;
+        align-items: left;
+    }
+
+    
+}

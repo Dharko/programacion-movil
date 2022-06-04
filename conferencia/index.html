@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharkoconference</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <div class="snack">
+
+        <div class="header">
+            <div class="header-content">
+                <div class="Logo">
+
+                </div>
+                <p> <a href="#"> <strong>conferencistas</strong></a></p>
+                <p> <a href="#"> <strong>Conferencia en vivo</strong></a></p>
+            </div>
+        </div>
+        <div class="imagenInicio">
+            <div class="portada">
+                <img src="conferencia.png" alt="ImagenI">
+            </div>
+        </div>
+        <div class="iniciosesion">
+            <section class="is-content">
+                <h1>Plataforma de conferencia en vivo sin limite de uso</h1>
+                <button type="button" data-toggle="modal" data-target="#singUpModal">
+                    Registro
+                </button>
+                <p></p>
+                <button>Inicio Sesion</button>
+            </section>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js'
+        import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
+        const firebaseConfig = {
+            apiKey: "AIzaSyCsBu2ji06cf5yuAwtB8TFgDdAU9DYCVqk",
+            authDomain: "snackconference.firebaseapp.com",
+            projectId: "snackconference",
+            storageBucket: "snackconference.appspot.com",
+            messagingSenderId: "72898700537",
+            appId: "1:72898700537:web:537dbc3dcdfe113f38ee28"
+        };
+
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        const singupForm = document.querySelector('#singup-form');
+
+        singupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('singup-email').value
+            const password = document.getElementById('singup-password').value
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    //Signed in
+                    const user = userCredential.user;
+                    //Clear the form
+                    singupForm.reset();
+                    //Close the modal
+                    $('#singUpModal').modal('hide')
+                    console.log("created")
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+
+                    console.log(errorCode + errorMessage)
+                })
+        })
+
+    </script>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

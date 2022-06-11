@@ -1,0 +1,132 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #1ea4fd;
+}
+
+.regresar {
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 40px;
+    top: 35px;
+
+
+}
+
+.foto {
+    position: absolute;
+    width: 233px;
+    height: 81px;
+    left: 77px;
+    top: 5px;
+    border-radius: 50%;
+}
+
+h1 {
+
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.foto1 {
+    border-radius: 25%;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 620px;
+    top: 120px;
+
+}
+
+.t1 {
+
+    position: absolute;
+    width: 355px;
+    height: 48px;
+    left: 179px;
+    top: 226px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.inicio {
+
+    position: absolute;
+    width: 181px;
+    height: 66px;
+    left: 1103px;
+    top: 15px;
+
+    background: #4363F8;
+    border-radius: 50px;
+}
+
+.ini {
+
+    position: absolute;
+    width: 181px;
+    height: 66px;
+    left: 200px;
+    top: 540px;
+
+    background: #4363F8;
+    border-radius: 50px;
+}
+
+.formulario1 {
+    padding-top: 290px;
+    padding-left: 170px;
+    ;
+
+}
+
+.formulario2 {
+    padding-top: 0px;
+    padding-left: 170px;
+    ;
+
+}
+
+h2 {
+
+    position: absolute;
+    width: 102px;
+    height: 24px;
+    left: 50px;
+    top: 0;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffffff;
+}

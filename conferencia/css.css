@@ -38,23 +38,6 @@ body {
 }
 
 
-
-.horarios {
-    grid-area: horarios;
-}
-
-.horarios-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.horarios-content p {
-    font-size: 1.75em;
-}
-
 .header {
     grid-area: header;
 }
@@ -66,27 +49,6 @@ body {
     margin: 10px;
 }
 
-.Logo {
-    justify-self: stretch;
-    align-self: stretch;
-    text-align: center;
-}
-
-.Logo img {
-    width: 95%;
-    height: 100px;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 10px 0 10px;
-}
 
 .iniciosesion {
     grid-area: iniciosesion;
@@ -134,30 +96,17 @@ a:hover {
 }
 
 a:visited {
-    color: #000000;
+    color: #ffffff;
 }
 
 a:active {
-    color: #000000;
+    color: #ffffff;
 }
 
 a:link {
-    color: #000000;
+    color: #ffffff;
 }
 
-#singup-form button{
-    font-size: 0.9em;
-    transition: 0.5s;
-}
-
-#singup-form button:hover{
-    font-size: 1.1em;
-}
-
-.modal-body{
-    text-align: center;
-    justify-content: center;
-}
 
 button {
     background-color: #1ea4fd;
